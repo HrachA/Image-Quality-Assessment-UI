@@ -23,8 +23,11 @@ from the matching PyTorch index before installing the rest of the requirements.
 ## Run
 
 ```powershell
-streamlit run app.py
+python app.py
 ```
+
+This launches Streamlit internally, so you do not need the `streamlit` command
+to be on your PATH.
 
 ## Metric Sources
 
@@ -46,4 +49,3 @@ and calls FR metrics as:
 ```python
 score = metric(distorted_tensor, reference_tensor)
 ```
-

@@ -1,6 +1,7 @@
 .venv/
+.idea/
 __pycache__/
 *.py[cod]
+*.log
 .pytest_cache/
 .streamlit/secrets.toml
-
