@@ -9,6 +9,16 @@ The UI lets the user choose:
 
 Each metric shows its type, pyIQA key, and whether higher values are better.
 
+## Screenshots
+
+### Full-reference metrics
+
+![Full-reference IQA UI](images/ui-fr.png)
+
+### No-reference metrics
+
+![No-reference IQA UI](images/ui-nr.png)
+
 ## Setup
 
 ```powershell
