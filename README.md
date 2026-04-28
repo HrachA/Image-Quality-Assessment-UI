@@ -19,6 +19,11 @@ Each metric shows its type, pyIQA key, and whether higher values are better.
 
 ![No-reference IQA UI](images/ui-nr.png)
 
+### Examples
+
+![Full-reference IQA UI](images/example1.png)
+![Full-reference IQA UI](images/example2.png)
+
 ## Setup
 
 ```powershell
