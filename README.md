@@ -33,11 +33,8 @@ from the matching PyTorch index before installing the rest of the requirements.
 ## Run
 
 ```powershell
-python app.py
+python -m streamlit run app.py
 ```
-
-This launches Streamlit internally, so you do not need the `streamlit` command
-to be on your PATH.
 
 ## Metric Sources
 

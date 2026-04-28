@@ -1,42 +1,13 @@
 from __future__ import annotations
 
-import subprocess
-import sys
 import math
 from typing import Any
 
 import numpy as np
 from PIL import Image
+import streamlit as st
 
 from metric_catalog import MetricInfo, MetricMode, metric_options, metrics_for_mode
-
-
-def running_inside_streamlit() -> bool:
-    try:
-        from streamlit.runtime.scriptrunner import get_script_run_ctx
-    except Exception:
-        return False
-    return get_script_run_ctx() is not None
-
-
-if __name__ == "__main__" and not running_inside_streamlit():
-    command = [
-        sys.executable,
-        "-m",
-        "streamlit",
-        "run",
-        __file__,
-        "--server.headless",
-        "true",
-        "--browser.gatherUsageStats",
-        "false",
-    ]
-    raise SystemExit(
-        subprocess.call([*command, *sys.argv[1:]])
-    )
-
-
-import streamlit as st
 
 
 st.set_page_config(page_title="IQA Metric UI", layout="centered")
